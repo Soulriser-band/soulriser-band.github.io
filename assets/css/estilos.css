@@ -66,6 +66,7 @@ html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  scroll-padding-top: 100px; /* Offset para el navbar fijo */
 }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
@@ -11115,7 +11116,7 @@ pre {
 }
 
 .custom-navbar {
-  min-height: 140px;
+  min-height: 90px;
 }
 
 @media (max-width: 1199.98px) {
@@ -11684,7 +11685,7 @@ dd{
   visibility: hidden;
   pointer-events: none;
   transition: opacity 0.25s ease, visibility 0.25s ease;
-  z-index: 999;
+  z-index: 9999;
   padding: 20px; /* evita que el contenido toque el borde */
 }
 
@@ -11728,4 +11729,28 @@ dd{
 .modal.is-open .modal-content {
   transform: translateY(0) scale(1);
   opacity: 1;
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: transparent;
+  color: #888;
+  border: none;
+  font-size: 32px;
+  line-height: 1;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  padding: 0;
+  z-index: 10;
+}
+
+.modal-close:hover {
+  color: #ff4444;
+}
+
+.modal-close:focus {
+  outline: none;
+  color: #fff;
 }
