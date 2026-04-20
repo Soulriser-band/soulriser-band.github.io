@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://soulriser-band.github.io/soulriser/sitemap.xml
