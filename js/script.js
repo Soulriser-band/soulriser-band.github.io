@@ -52,3 +52,15 @@ window.addEventListener('scroll', () => {
     cta.style.pointerEvents = "none";
   }
 });
+
+document.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', function(e) {
+    if (this.hostname === window.location.hostname) {
+      e.preventDefault();
+      document.body.style.opacity = 0;
+      setTimeout(() => {
+        window.location = this.href;
+      }, 300);
+    }
+  });
+});

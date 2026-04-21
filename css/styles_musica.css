@@ -1,0 +1,162 @@
+body {
+  animation: fadePage 0.4s ease;
+}
+
+@keyframes fadePage {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-banda {
+  background: url('../img/porta_tapa_disco_simple.png') center/cover no-repeat;
+}
+
+/* más oscuro que home */
+.hero-banda .hero-overlay {
+  background: rgba(0,0,0,0.75);
+}
+
+.music-hero {
+  text-align: center;
+  padding: 120px 20px;
+  background: #0b0b0d;
+}
+
+.music-hero h1 {
+  font-size: clamp(40px, 8vw, 90px);
+  color: #fff;
+  letter-spacing: 4px;
+}
+
+.music-hero p {
+  color: #aaa;
+  margin-bottom: 30px;
+}
+
+.release-cover img {
+  width: 100%;
+  border-radius: 6px;
+  transition: 0.5s;
+}
+
+.release-cover:hover img {
+  transform: scale(1.05);
+  filter: brightness(0.8);
+}
+
+.release-label {
+  color: #e50914;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.release-desc {
+  color: #aaa;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.release-actions {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.music-card {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.music-card img {
+  width: 100%;
+  transition: 0.4s;
+  filter: brightness(0.8);
+}
+
+.music-card:hover img {
+  transform: scale(1.1);
+  filter: brightness(1);
+}
+
+.music-info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+
+  background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+}
+
+.music-info p {
+  color: #fff;
+  margin: 0;
+}
+
+.music-info span {
+  font-size: 0.7rem;
+  color: #aaa;
+}
+
+.music-card:hover {
+  box-shadow: 0 10px 30px rgba(229,9,20,0.25);
+}
+.video-card {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+
+.video-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.video-thumb img {
+  width: 100%;
+  transition: 0.4s;
+  filter: brightness(0.7);
+}
+
+.video-thumb:hover img {
+  transform: scale(1.1);
+  filter: brightness(1);
+}
+
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  background: rgba(229,9,20,0.8);
+
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-title {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.play-btn {
+  transition: 0.3s;
+}
+
+.video-thumb:hover .play-btn {
+  transform: translate(-50%, -50%) scale(1.1);
+}
