@@ -64,3 +64,21 @@ document.querySelectorAll('a').forEach(link => {
     }
   });
 });
+
+// letras
+const buttons = document.querySelectorAll('.lyrics-btn');
+const songs = document.querySelectorAll('.lyrics-song');
+
+buttons.forEach(btn => {
+  btn.addEventListener('click', () => {
+
+    buttons.forEach(b => b.classList.remove('active'));
+    songs.forEach(s => s.classList.remove('active'));
+
+    btn.classList.add('active');
+
+    const target = btn.getAttribute('data-song');
+    document.getElementById(target).classList.add('active');
+
+  });
+});

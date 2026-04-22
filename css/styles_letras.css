@@ -1,0 +1,125 @@
+/* HERO */
+.hero {
+  height: 100vh;
+  background-image: url("../img/enlace_redes.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    background-image: url("../img/banner_mobile.png");
+    background-position: center;
+  }
+  .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba(0,0,0,0.1) 10%,
+      rgba(0,0,0,0.1) 20%,
+      rgba(0,0,0,0.2) 1000%
+    );
+    z-index: 1;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+  }
+
+  .hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+      circle at center,
+      rgba(229,9,20,0.25),
+      transparent 70%
+    );
+    mix-blend-mode: screen;
+    z-index: 1;
+  }
+
+  .hero-content h1 {
+    text-shadow: 0 0 25px rgba(0,0,0,0.8);
+  }
+  
+}
+
+
+.lyrics {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.lyrics-selector {
+  margin-bottom: 40px;
+}
+
+.lyrics-btn {
+  background: transparent;
+  border: none;
+  color: #888;
+  margin: 0 10px;
+  letter-spacing: 2px;
+  transition: 0.3s;
+}
+
+.lyrics-btn:hover,
+.lyrics-btn.active {
+  color: #e50914;
+}
+
+.lyrics-display {
+  max-width: 700px;
+  margin: auto;
+}
+
+.lyrics-song {
+  display: none;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.lyrics-song.active {
+  display: block;
+  opacity: 1;
+}
+
+.lyrics-song p {
+  color: #ccc;
+  line-height: 1.8;
+  letter-spacing: 1px;
+}
+
+.lyrics {
+  background: linear-gradient(
+    to bottom,
+    #0b0b0d,
+    #120507
+  );
+}
+
+
+.lyrics-song.active {
+  animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
