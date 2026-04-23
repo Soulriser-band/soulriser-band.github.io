@@ -476,6 +476,39 @@ h2 {
 
 }
 
+.proof {
+  padding: 80px 20px;
+  background: #0b0b0d;
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.05);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.proof-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.proof-label {
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #a31521;
+  margin-bottom: 10px;
+}
+
+.proof h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.1;
+  margin-bottom: 15px;
+}
+
+.proof-text {
+  font-size: 0.95rem;
+  color: #aaa;
+}
+
 /* SCROLL INDICATOR */
 .scroll-indicator {
   position: absolute;
