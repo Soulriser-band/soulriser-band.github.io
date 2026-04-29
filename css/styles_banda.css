@@ -213,3 +213,28 @@ body {
   max-width: 900px;
   margin: auto;
 }
+
+
+.members-videos {
+  padding: 80px 20px;
+}
+
+.video-card {
+  text-align: center;
+}
+
+/* iframe vertical tipo short */
+.video-card iframe {
+  width: 100%;
+  height: 480px;
+  border-radius: 10px;
+  border: none;
+}
+
+/* nombre abajo */
+.video-name {
+  margin-top: 10px;
+  color: #aaa;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}

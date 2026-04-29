@@ -39,8 +39,17 @@ body {
 }
 
 
-.nav-link.active {
+.navbar .nav-link.active {
   color: #e50914;
+  font-weight: 600;
+}
+
+.navbar .nav-link.active::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background: #e50914;
+  margin-top: 5px;
 }
 
 section {
