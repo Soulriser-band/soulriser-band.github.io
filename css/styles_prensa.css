@@ -1,7 +1,7 @@
 /* HERO */
 .hero {
   height: 100vh;
-  background-image: url("../img/gallery/gallery6.jpeg");
+  background-image: url("../img/gallery/gallery6.webp");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -58,7 +58,7 @@
 .footer-bg {
   position: absolute;
   inset: 0;
-  background: url("../img/gallery/gallery11.JPG") center/cover no-repeat;
+  background: url("../img/gallery/gallery11.webp") center/cover no-repeat;
   opacity: 0.1;
 }
 

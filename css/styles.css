@@ -289,7 +289,7 @@ h2 {
 /* HERO */
 .hero {
   height: 100vh;
-  background-image: url("../img/srband_.png");
+  background-image: url("../img/srband_.webp");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -995,7 +995,7 @@ h2 {
 .footer-bg {
   position: absolute;
   inset: 0;
-  background: url("../img/gallery/gallery6.jpeg") center/cover no-repeat;
+  background: url("../img/gallery/gallery6.webp") center/cover no-repeat;
   opacity: 0.1;
 }
 
