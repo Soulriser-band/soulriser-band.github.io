@@ -82,3 +82,36 @@ buttons.forEach(btn => {
 
   });
 });
+
+// GALERIA MODAL
+
+const galleryImages = document.querySelectorAll(
+  ".gallery-item img, .member-grid img"
+);
+
+const galleryModal = document.getElementById("galleryModal");
+const galleryModalImg = document.getElementById("galleryModalImg");
+
+
+
+galleryImages.forEach(img => {
+
+  img.addEventListener("click", () => {
+
+    galleryModal.classList.add("active");
+
+    galleryModalImg.src = img.src;
+
+  });
+
+});
+
+// cerrar
+
+galleryModal.addEventListener("click", (e) => {
+
+  if (e.target !== galleryModalImg) {
+    galleryModal.classList.remove("active");
+  }
+
+});
