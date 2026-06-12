@@ -1,19 +1,40 @@
 # Soulriser - Sitio Oficial
 
-Sitio web oficial de la banda Soulriser (Metal Rock Alternativo).
+Sitio web oficial de Soulriser, banda de metal rock alternativo de San Luis, Argentina.
 
-## 🌐 Web
+## 🌐 Sitio Web
 
 https://soulriser-band.github.io/
 
 ## 🎧 Plataformas
 
-- YouTube
 - Spotify
+- YouTube
+- Instagram
+- Facebook
+- TikTok
+- X
 
 ## 📍 Origen
 
 San Luis, Argentina
+
+## 🛠 Tecnologías
+
+- HTML5
+- CSS3
+- JavaScript
+- Bootstrap 5
+
+## 📄 Secciones
+
+- Inicio
+- Banda
+- Música
+- Letras
+- Galería
+- Prensa
+- Contacto
 
 ---
 
