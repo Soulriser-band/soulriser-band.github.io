@@ -115,3 +115,40 @@ galleryModal.addEventListener("click", (e) => {
   }
 
 });
+
+
+//ANALYTICS
+const analyticsLinks = {
+    'instagram-link': 'click_instagram',
+    'youtube-link': 'click_youtube',
+    'spotify-link': 'click_spotify',
+    'facebook-link': 'click_facebook',
+    'tiktok-link': 'click_tiktok',
+    'x-link': 'click_x',
+    'email-link': 'click_email',
+    'presskit-link': 'click_presskit',
+    'email-link': 'click_email',
+    'presskit-link': 'click_presskit',
+    'developer': 'click_developer'
+};
+
+Object.entries(analyticsLinks).forEach(([id, eventName]) => {
+
+    const element = document.getElementById(id);
+
+    if (element) {
+
+        element.addEventListener('click', () => {
+
+            if (typeof gtag === 'function') {
+                gtag('event', eventName, {
+                  link_id: id,
+                  page: window.location.pathname
+              });
+            }
+
+        });
+
+    }
+
+});
