@@ -160,3 +160,35 @@ body {
 .video-thumb:hover .play-btn {
   transform: translate(-50%, -50%) scale(1.1);
 }
+
+.video-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+
+  background: rgba(143,15,24,0.9);
+  border: 1px solid rgba(143,15,24,0.5);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: 0.3s;
+}
+
+.video-thumb svg {
+  width: 28px;
+  height: 28px;
+  fill: white;
+}
+
+/* hover opcional */
+.video-card:hover .video-play {
+  transform: translate(-50%, -50%) scale(1.08);
+  background: #8f0f18;
+}
