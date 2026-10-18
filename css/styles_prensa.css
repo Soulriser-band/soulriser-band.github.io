@@ -78,6 +78,12 @@
   border: none;
 }
 
+.rocktiva img{
+  max-width: 450px; /* Evita que la imagen mida más de 450px */
+  width: 100%;       /* Permite que se adapte y achique en pantallas pequeñas (móviles) */
+  height: auto;     /* Mantiene la proporción original para no deformarse */
+  display: block;
+}
 .press-card {
   background: #0a0a0a;
   border: 1px solid rgba(255,255,255,0.05);
