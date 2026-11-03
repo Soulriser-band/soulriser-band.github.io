@@ -1007,6 +1007,36 @@ h2 {
 }
 
 
+
+/* Comunidad musical */
+
+.rockandchange{
+width: 100% !important;
+  
+  height: auto;
+  display: block;
+}
+
+.social-community {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 30px 0 45px;
+  gap: 12px;
+}
+
+.social-community-text {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.social-community .social-card {
+  width: 180px;
+  max-width: 100%;
+}
+
 /* CARD */
 .social-card {
   border: 1px solid #2a2a2f;
